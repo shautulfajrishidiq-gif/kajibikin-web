@@ -284,7 +284,7 @@ window.PROJECTS = [
     $('#app').innerHTML = header() +
       '<main><section class="hero"><div class="wrap"><span class="eyebrow">KUMPULAN PROJECT</span>' +
       '<h1>Bikin aplikasi buat <em>masalah sehari-hari.</em></h1>' +
-      '<p>Gue kaji masalah yang sering bikin ribet, terus gue bikin solusinya. Semuanya gratis dicoba, tinggal buka di HP.</p>' +
+      '<p>Gue kaji masalah yang sering bikin ribet, terus gue bikin solusinya. Semuanya bisa dibuka langsung di HP.</p>' +
       '<div class="row"><a class="btn" href="#project">Lihat project</a>' +
       (first ? '<a class="btn ghost" href="#' + encodeURIComponent(first.slug) + '">Coba ' + esc(first.name) + '</a>' : '') + '</div></div></section>' +
       '<section class="sec" id="project"><div class="wrap"><h2>Project</h2><p class="lead">Satu per satu, dari yang sudah jalan sampai yang masih di kepala.</p><div class="grid">' + P.map(card).join('') + '</div></div></section>' +
@@ -332,7 +332,7 @@ window.PROJECTS = [
       (steps ? '<section class="sec" id="cara"><h2>' + esc(p.stepsTitle || 'Cara pakai') + '</h2><p class="lead">Ikuti urutannya, nggak sampai lima menit.</p><div class="steps">' + steps + '</div></section>' : '') +
       (gal ? '<section class="sec"><h2>' + esc(p.galleryTitle || 'Tampilan') + '</h2><p class="lead">Geser ke samping untuk lihat semua.</p><div class="gal">' + gal + '</div></section>' : '') +
       (inst ? '<section class="sec"><h2>Pasang di HP</h2><p class="lead">Nggak perlu toko aplikasi.</p><div class="inst">' + inst + '</div></section>' : '') +
-      '<section class="cta"><h2>Udah siap ngatur?</h2><p>Gratis dicoba, langsung dari browser.</p><a class="btn" href="' + url + '" target="_blank" rel="noopener">' + esc(p.cta || 'Buka') + ' ' + ARROW + '</a></section>' +
+      '<section class="cta"><h2>Udah siap ngatur?</h2><p>Buka langsung dari browser, lalu pasang di layar utama HP.</p><a class="btn" href="' + url + '" target="_blank" rel="noopener">' + esc(p.cta || 'Buka') + ' ' + ARROW + '</a></section>' +
       (others ? '<section class="sec"><h2>Project lainnya</h2><div class="mini" style="margin-top:20px">' + others + '</div></section>' : '') +
       '</div></main>' + footer();
     window.scrollTo(0, 0);
